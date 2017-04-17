@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "WYWNet2"
-  s.version          = "0.2.0"
+  s.version          = "0.3.0"
   s.summary          = "A short description of WYWNet2."
   s.description      = <<-DESC
                        An optional longer description of WYWNet2
@@ -24,5 +24,6 @@ Pod::Spec.new do |s|
   }
 
   s.public_header_files = 'WYWNet2/Classes/**/*.h'
+  s.frameworks = 'MobileCoreServices', 'SystemConfiguration'
   s.dependency 'AFNetworking'
 end
